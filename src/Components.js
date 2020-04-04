@@ -21,7 +21,7 @@ const ListMovies = () => {
 
     return (
         <>
-            <div className="container">
+            <div className="container d-flex">
                 {result && result.length > 0 && 
                 result.map(({id, title, description}) => (
                     <CardMovies key={id} title={title} description={description} />
